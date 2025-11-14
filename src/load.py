@@ -1,6 +1,4 @@
 import os
-# os.environ["KAGGLE_CONFIG_DIR"] = "/home/alexey/"
-
 import requests
 import json
 import pandas as pd
@@ -91,7 +89,6 @@ def get_fng_data2():
 
     except (ConnectionError, Timeout, TooManyRedirects) as e:
         print(e)
-
 
 
 

@@ -18,19 +18,23 @@ import matplotlib.pyplot as plt
 # Load the user-uploaded files
 fng = pd.read_excel(fng_path)
 bda = pd.read_excel(bda_path)
+btc = pd.read_excel(btc_path)
 
 # Fix column names
 fng = fng.rename(columns={'timestamp':'Date','value':'FNG'})
 bda = bda.rename(columns={'Effective date ':'Date',
                           'S&P Cryptocurrency Broad Digital Asset Index (USD)':'BDA'})
+btc = btc.rename(columns={'timestamp':'Date','value':'Bitcoin Price'})
 
 # Convert date
 fng['Date'] = pd.to_datetime(fng['Date'])
 bda['Date'] = pd.to_datetime(bda['Date'])
+btc['Date'] = pd.to_datetime(btc['Date'])
 
 # Sort by date
 fng = fng.sort_values('Date')
 bda = bda.sort_values('Date')
+btc = btc.sort_values('Date')
 
 # --- Plot FNG ---
 plt.figure(figsize=(10,5))
@@ -52,7 +56,17 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 
+# --- Plot BTC ---
+plt.figure(figsize=(10,5))
+plt.plot(btc['Date'], btc['Bitcoin Price'])
+plt.xlabel("Date")
+plt.ylabel("Bitcoin Price")
+plt.title("Bitcoin Price Over Time")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
 
+# --- Plot FNG and BDA ---
 merged = pd.merge(fng, bda, on="Date", how="inner")
 
 start = pd.to_datetime("2024-05-02")
