@@ -4,7 +4,7 @@ The scope of the project is to analyze the correlations among Fear and Greed Ind
 # Data sources
 For the timeframe, I chose the historical data timeframe to be from 05/02/2024 to 11/06/2025. The number of rows is 554, which corresponds to 554 days, around one and a half years. 
 All three datasets are within this timeframe. 
-The Fear and Greed Index and the Bitcoin Price historical data are both obtained through writing python code and calling API. The BDA Index is obtained from the S&P Global website. 
+The Fear and Greed Index and the Bitcoin Price historical data are both obtained through writing Python code and calling API. The BDA Index is obtained from the S&P Global website. 
 
 # Results 
 _describe your findings_
