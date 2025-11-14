@@ -21,6 +21,6 @@ From `src/` directory run:
 
 `python load.py`
 
-Results will appear in `results/` folder. All obtained will be stored in `data/`
+Results will appear in `results/` folder. All obtained data files will be stored in `data/`
 
-I also created another folder called `data2/` which stores the finalized versions of the three data files.  
+  
