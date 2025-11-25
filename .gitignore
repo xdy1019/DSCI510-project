@@ -147,6 +147,7 @@ venv.bak/
 
 #folders
 data/
+datasets/
 results/
 images/
 
