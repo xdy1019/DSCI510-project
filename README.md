@@ -24,7 +24,7 @@ _update these instructions_
 
 From `src/` directory run:
 
-`python load.py`
+`python main.py`
 
 Results will appear in `results/` folder. All obtained data files will be stored in `data/`
 
