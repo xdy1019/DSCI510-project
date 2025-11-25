@@ -14,7 +14,7 @@ The Fear and Greed Index and the Bitcoin Price historical data are both obtained
 
 For the API, I use the coinmarketcap API.
 
-https://coinmarketcap.com/api/documentation/v1/#section/Quick-Start-Guide  
+https://coinmarketcap.com/api/documentation/v1/ 
 
 The above link contains the instruction on setting up your API key in order to call the APIs. 
 
