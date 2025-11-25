@@ -132,7 +132,3 @@ def get_bitcoin_price_data():
         print(e)
     
 
-if __name__ == "__main__":
-    get_fng_data1()
-    get_fng_data2()
-    get_bitcoin_price_data()
