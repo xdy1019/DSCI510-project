@@ -7,7 +7,7 @@ from pathlib import Path
 from requests import Request, Session
 import matplotlib.pyplot as plt
 
-data_dir = Path(__file__).resolve().parents[1] / "data2"
+data_dir = Path(__file__).resolve().parents[1] / "datasets"
 data_dir.mkdir(parents=True, exist_ok=True)
 bda_path = data_dir / "BDA index.xlsx"
 btc_path = data_dir / "btc price.xlsx"

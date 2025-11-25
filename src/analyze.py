@@ -5,7 +5,7 @@ from pathlib import Path
 from requests import Request, Session
 import matplotlib.pyplot as plt
 
-data_dir = Path(__file__).resolve().parents[1] / "data2"
+data_dir = Path(__file__).resolve().parents[1] / "datasets"
 data_dir.mkdir(parents=True, exist_ok=True)
 results_dir = Path(__file__).resolve().parents[1] / "results"
 results_dir.mkdir(exist_ok=True)
