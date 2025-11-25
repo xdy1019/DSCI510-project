@@ -6,7 +6,7 @@ For the timeframe, I chose the historical data timeframe to be from 05/02/2024 t
 All three datasets are within this timeframe. 
 The Fear and Greed Index and the Bitcoin Price historical data are both obtained through calling API. The BDA Index is obtained from the S&P Global website. 
 
-I also added the `datasets/` folder in this project. The `datasets/` folder contains the finalized versions of the data files of fng index, bitcoin price, and bda index within that timeframe. When you call the APIs now, the timeframe will shift, and consider the fact that the bda index data file is directly downloaded from S&P Global website, I think it's necessary to create the datasets folder in order to run the other files. To run the other files, you need to have the `datasets/` folder in the repository. 
+I also added the `datasets/` folder in this project. The `datasets/` folder contains the finalized versions of the data files of fng index, bitcoin price, and bda index within that timeframe. When you call the APIs now, the timeframe will shift, and consider the fact that the bda index data file is directly downloaded from the S&P Global website, I think it's necessary to create the datasets folder in order to run the other files. To run the other files, you need to have the `datasets/` folder in the repository. 
 
 # Results 
 _describe your findings_
