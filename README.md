@@ -10,8 +10,13 @@ The Fear and Greed Index and the Bitcoin Price historical data are both obtained
 _describe your findings_
 
 # Installation
-- _describe what API keys, user must set where (in .enve) to be able to run the project._
-- _describe what special python packages you have used_
+The Fear and Greed Index and the Bitcoin Price historical data are both obtained through writing Python code and calling API. The BDA Index is obtained from the S&P Global website.
+
+For the API, I use the coinmarketcap API.
+
+https://coinmarketcap.com/api/documentation/v1/#section/Quick-Start-Guide  
+
+The above link contains the instruction on setting up your API key in order to call the APIs. 
 
 # Running analysis 
 _update these instructions_
