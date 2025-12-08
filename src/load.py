@@ -44,7 +44,10 @@ def get_fng_data1():
             json.dump(filtered, jf, ensure_ascii=False, indent=2)
     
         df = pd.DataFrame(filtered, columns=["timestamp", "value"])
-        df["date"] = pd.to_datetime(df["timestamp"], unit='s')
+        df["Date"] = pd.to_datetime(df["timestamp"], unit='s')
+        df = df.drop(columns=["timestamp"])
+        df = df[["Date", "value"]]
+
         print(df.head())
         df.to_excel(xlsx_path, index=False)       
 
@@ -83,7 +86,9 @@ def get_fng_data2():
             json.dump(filtered, jf, ensure_ascii=False, indent=2)
     
         df = pd.DataFrame(filtered, columns=["timestamp", "value"])
-        df["date"] = pd.to_datetime(df["timestamp"], unit='s')
+        df["Date"] = pd.to_datetime(df["timestamp"], unit='s')
+        df = df.drop(columns=["timestamp"])
+        df = df[["Date", "value"]]
         print(df.head())
         df.to_excel(xlsx_path, index=False)
 
