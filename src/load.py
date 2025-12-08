@@ -95,6 +95,24 @@ def get_fng_data2():
     except (ConnectionError, Timeout, TooManyRedirects) as e:
         print(e)
 
+def process_fng_data():
+    fng1_path = data_dir / "fng1.xlsx"
+    fng2_path = data_dir / "fng2.xlsx"
+    combined_path = data_dir / "fng.xlsx"
+
+    # Read the two partial datasets
+    df1 = pd.read_excel(fng1_path)
+    df2 = pd.read_excel(fng2_path)
+
+    # Append fng2 after fng1
+    combined = pd.concat([df1, df2], ignore_index=True)
+    combined["Date"] = pd.to_datetime(combined["Date"]).dt.strftime("%Y-%m-%d")
+
+    # Save combined dataset
+    combined.to_excel(combined_path, index=False)
+
+    return combined
+
 
 
 def get_bitcoin_price_data():
