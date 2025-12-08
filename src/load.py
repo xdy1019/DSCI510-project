@@ -124,8 +124,8 @@ def get_bitcoin_price_data():
             json.dump(filtered, jf, ensure_ascii=False, indent=2)
     
         df = pd.DataFrame(filtered, columns=["timestamp", "value"])
-        print(df.head())
         df.to_excel(xlsx_path, index=False)
+        return df
 
 
     except (ConnectionError, Timeout, TooManyRedirects) as e:
