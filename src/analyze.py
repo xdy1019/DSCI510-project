@@ -18,17 +18,6 @@ fng_path = data_dir / "fng.xlsx"
 
 
 def _prepare_data():
-    """
-    Internal helper:
-    - loads fng, bda, btc from Excel
-    - fixes column names
-    - converts and sorts dates
-    - builds merged + transformed DataFrame (same as your original script)
-
-    Returns:
-        fng, bda, btc, merged, clean
-    """
-    # Load
     fng = pd.read_excel(fng_path)
     bda = pd.read_excel(bda_path)
     btc = pd.read_excel(btc_path)

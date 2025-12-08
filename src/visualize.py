@@ -21,9 +21,6 @@ results_dir.mkdir(parents=True, exist_ok=True)
 
 
 def _load_series():
-    """
-    Internal helper: load FNG, BDA, BTC, fix columns, convert dates, sort.
-    """
     fng = pd.read_excel(fng_path)
     bda = pd.read_excel(bda_path)
     btc = pd.read_excel(btc_path)
@@ -210,10 +207,7 @@ def plot_bda_btc():
     plt.show()
 
 
-def run_all_plots():
-    """
-    Convenience wrapper to generate all six figures exactly as before.
-    """
+def run_all_plots():   
     plot_fng()
     plot_bda()
     plot_btc()
