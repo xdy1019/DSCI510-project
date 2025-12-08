@@ -20,7 +20,7 @@ https://coinmarketcap.com/api/documentation/v1/
 
 The above link contains the instruction on setting up your API key in order to call the APIs. 
 
-You need to create the API key and save the API key into .env, the format can be referenced from .env.example file. 
+You need to create the API key and save the key into .env, the format can be referenced from .env.example file. 
 
 # Running analysis 
 
