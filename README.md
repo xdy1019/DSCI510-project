@@ -21,13 +21,19 @@ https://coinmarketcap.com/api/documentation/v1/
 The above link contains the instruction on setting up your API key in order to call the APIs. 
 
 # Running analysis 
-_update these instructions_
-
 
 From `src/` directory run:
 
 `python main.py`
 
 Results will appear in `results/` folder. All obtained data files will be stored in `data/`
+
+The "fng.xlsx" and "btc_price.xlsx", which are obtained through writing code and calling APIs, are already the finalized versions of the corresponding files. The BDA Index historical data can be manually downloaded as an Excel file from the following website:
+
+https://www.spglobal.com/spdji/en/indices/digital-assets/sp-cryptocurrency-broad-digital-asset-bda-index/#overview 
+
+You can download the BDA Index data file from that website. 
+
+To run the `main.py` file, you need to create another folder called `datasets/`. I moved the "fng.xlsx", "btc_price.xlsx", and the "BDA Index.xlsx" files into this `datasets/` folder so as to store the finalized versions of the datasets. The "fng.xlsx" and "btc_price.xlsx" are the same from the `data/` folder. The `analyze.py` and `visualize.py` import the datasets from the `datasets/` folder to perform the analysis. 
 
   
