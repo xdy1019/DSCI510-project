@@ -30,7 +30,7 @@ From `src/` directory run:
 
 Results will appear in `results/` folder. All obtained data files will be stored in `data/`
 
-The "fng.xlsx" and "btc price.xlsx", which are obtained through writing code and calling APIs, are already the finalized versions of the corresponding files. The BDA Index historical data can be manually downloaded as an Excel file from the following website:
+The "fng.xlsx" and "btc price.xlsx", which are obtained through writing code and calling APIs, are already the finalized versions of the corresponding files. The BDA Index historical data can be manually downloaded from the following website:
 
 https://www.spglobal.com/spdji/en/indices/digital-assets/sp-cryptocurrency-broad-digital-asset-bda-index/#overview 
 
