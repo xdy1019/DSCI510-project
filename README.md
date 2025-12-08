@@ -9,7 +9,7 @@ The Fear and Greed Index and the Bitcoin Price historical data are both obtained
 I also added the `datasets/` folder in this project. The `datasets/` folder contains the finalized versions of the data files of fng index, bitcoin price, and bda index within that timeframe. When you call the APIs now, the timeframe will shift, and consider the fact that the bda index data file is directly downloaded from the S&P Global website, I think it's necessary to create the datasets folder in order to run the other files. To run the other files, you need to have the `datasets/` folder in the repository. 
 
 # Results 
-The results.ipynb file contains the code and the results.
+The `results.ipynb` file contains the code and the results.
 
 # Installation
 The Fear and Greed Index and the Bitcoin Price historical data are both obtained through writing Python code and calling API. The BDA Index is obtained from the S&P Global website.
