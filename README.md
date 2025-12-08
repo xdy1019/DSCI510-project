@@ -30,7 +30,7 @@ From `src/` directory run:
 
 Results will appear in `results/` folder. All obtained data files will be stored in `data/`
 
-The "fng.xlsx" and "btc_price.xlsx", which are obtained through writing code and calling APIs, are already the finalized versions of the corresponding files. The BDA Index historical data can be manually downloaded as an Excel file from the following website:
+The "fng.xlsx" and "btc price.xlsx", which are obtained through writing code and calling APIs, are already the finalized versions of the corresponding files. The BDA Index historical data can be manually downloaded as an Excel file from the following website:
 
 https://www.spglobal.com/spdji/en/indices/digital-assets/sp-cryptocurrency-broad-digital-asset-bda-index/#overview 
 
@@ -38,7 +38,7 @@ You can download the BDA Index data file from that website.
 
 The functions from the `load.py` file can be run from the `main.py` file. 
 
-To run the `main.py` file, you need to create another folder called `datasets/`. I moved the "fng.xlsx", "btc_price.xlsx", and the "BDA index.xlsx" files into this `datasets/` folder so as to store the finalized versions of the datasets. The "fng.xlsx" and "btc_price.xlsx" are the same from the `data/` folder. The `analyze.py` and `visualize.py` import the data files from the datasets folder in order to perform the analysis. 
+To run the `main.py` file, you need to create another folder called `datasets/`. I moved the "fng.xlsx", "btc price.xlsx", and the "BDA index.xlsx" files into this `datasets/` folder so as to store the finalized versions of the datasets. The "fng.xlsx" and "btc price.xlsx" are the same from the `data/` folder. The `analyze.py` and `visualize.py` import the data files from the datasets folder in order to perform the analysis. 
 
 
   
